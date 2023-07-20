@@ -1,0 +1,13 @@
+{
+  "name": "lawyer_portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "npx sass assets/scss/app.scss assets/styles/app.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
