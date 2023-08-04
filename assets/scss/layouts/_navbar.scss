@@ -4,12 +4,19 @@ nav{
         margin-bottom: 0;
         padding: 0;
         display: flex;
+        gap: 55px;
         li{
             list-style-type: none;
             a{
-                color:red;
-                font-size: 20px;
-                margin-bottom: 20px;
+                color: var(--black_deep);
+                text-transform: uppercase;
+                font-weight: 400;
+
+                &.active,
+                &:hover{
+                    font-family: var(--poppin_bold);
+                    // font-weight: 800;
+                }
             }
         }
     }
