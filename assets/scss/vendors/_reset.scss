@@ -1,29 +1,35 @@
 body,
-html{
+html {
     margin: 0;
     padding: 0;
     outline: 0;
     box-sizing: border-box;
+    font-family: var(--app_font);
 }
 
 img,
 label,
-a,i,span{
+a,
+i,
+span {
     display: inline-block;
 }
 
-a{
+a {
     text-decoration: none;
+    font-size: 12px;
+    line-height: 22px;
+    transition-duration: .3s;
 }
 
-img{
+img {
     max-width: 100%;
     object-fit: cover;
     object-position: left;
 }
 
 ul,
-ol{
+ol {
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -34,18 +40,18 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
     margin: 0;
     font-size: 22px;
     line-height: 32px;
 }
 
-p{
+p {
     margin: 0;
     font-size: 14px;
     line-height: 24px;
 
-    &.p2{
+    &.p2 {
         font-size: 24px;
         line-height: 34px;
     }
@@ -57,22 +63,30 @@ div,
 section,
 aside,
 main,
-footer{
+footer {
     box-sizing: border-box;
 }
 
 
-h1{
+h1 {
     font-size: 90px;
     line-height: 100px;
 }
 
-h2{
+h2 {
     font-size: 48px;
     line-height: 58px;
 }
 
-h3{
+h3 {
     font-size: 22px;
     line-height: 32px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
 }
