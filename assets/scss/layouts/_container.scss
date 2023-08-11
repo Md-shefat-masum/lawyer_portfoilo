@@ -1,5 +1,24 @@
 .container{
-    width: 1200px;
-    // border: var(--border);
+    width: 1400px;
+    border: var(--border);
     margin: auto;
+    
+    @include xs(){
+        width: calc(100% - 30px);
+    }
+    @include sm(){
+        width: calc(576px - 30px);
+    }
+    @include md(){
+        width: calc(768px - 30px);
+    }
+    @include lg(){
+        width: calc(992px - 30px);
+    }
+    @include xl(){
+        width: calc(1200px - 30px);
+    }
+    @include xxl(){
+        width: calc(1400px - 30px);
+    }
 }
