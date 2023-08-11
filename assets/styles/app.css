@@ -28,6 +28,24 @@
   --poppin_extrabold: "poppins-extrabold";
 }
 
+/* 
+    Project: lawyer portfolio
+    User: MD Shefat Masum
+    Github: https://github.com/MD Shefat Masum
+    Date: 11 August 2023 
+    Time: 23:51:02 
+    Path: assets\scss\mixins\_media.scss
+    Task List: working with media query
+*/
+/* 
+    Project: lawyer portfolio
+    User: MD Shefat Masum
+    Github: https://github.com/MD Shefat Masum
+    Date: 11 August 2023 
+    Time: 23:52:41 
+    Path: assets\scss\mixins\_media.scss
+    Task List: working extra large screeen
+*/
 body,
 html {
   margin: 0;
@@ -116,8 +134,39 @@ h3 {
 }
 
 .container {
-  width: 1200px;
+  width: 1400px;
+  border: var(--border);
   margin: auto;
+}
+@media (min-width: 0px) and (max-width: 575.9px) {
+  .container {
+    width: calc(100% - 30px);
+  }
+}
+@media (min-width: 576px) and (max-width: 767.9px) {
+  .container {
+    width: 546px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.9px) {
+  .container {
+    width: 738px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.9px) {
+  .container {
+    width: 962px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.9px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1370px;
+  }
 }
 
 header {
