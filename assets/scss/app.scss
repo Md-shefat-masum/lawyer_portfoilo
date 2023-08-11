@@ -1,5 +1,6 @@
 @import "./vendors/fonts";
 @import "./vendors/variables";
+@import "./mixins/media";
 @import "./vendors/reset";
 
 @import "./components/button";
@@ -13,3 +14,6 @@
 @import "./views/about";
 @import "./views/contact";
 @import "./views/home";
+
+
+
