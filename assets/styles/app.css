@@ -18,41 +18,22 @@
   --border: 1px solid red;
   --brand_light: #0F6E8C;
   --brand_deep: #05546D;
-  --black_light: #4F4F4F;
+  --black_light:#4F4F4F;
   --black_deep: #2D2F30;
-  --white: #FFF;
+  --white: #fff;
   --app_font: "poppins-regular";
   --poppin_regular: "poppins-regular";
   --poppin_semibold: "poppins-semibold";
   --poppin_bold: "poppins-bold";
-  --poppin_extrabold: "poppins-extrabold";
+  --poppin_extrabold: "poppins-extabold";
 }
 
-/* 
-    Project: lawyer portfolio
-    User: MD Shefat Masum
-    Github: https://github.com/MD Shefat Masum
-    Date: 11 August 2023 
-    Time: 23:51:02 
-    Path: assets\scss\mixins\_media.scss
-    Task List: working with media query
-*/
-/* 
-    Project: lawyer portfolio
-    User: MD Shefat Masum
-    Github: https://github.com/MD Shefat Masum
-    Date: 11 August 2023 
-    Time: 23:52:41 
-    Path: assets\scss\mixins\_media.scss
-    Task List: working extra large screeen
-*/
 body,
 html {
   margin: 0;
   padding: 0;
   outline: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: var(--app_font);
 }
 
@@ -67,17 +48,13 @@ span {
 a {
   text-decoration: none;
   font-size: 12px;
-  line-height: 22px;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
 img {
   max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: left;
-     object-position: left;
+  object-fit: cover;
+  object-position: left;
 }
 
 ul,
@@ -94,6 +71,7 @@ h4,
 h5,
 h6 {
   margin: 0;
+  list-style: none;
   font-size: 22px;
   line-height: 32px;
 }
@@ -115,8 +93,7 @@ section,
 aside,
 main,
 footer {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -140,8 +117,8 @@ h3 {
 
 .container {
   width: 1400px;
-  border: var(--border);
   margin: auto;
+  padding: 15px;
 }
 @media (min-width: 0px) and (max-width: 575.9px) {
   .container {
@@ -174,52 +151,120 @@ h3 {
   }
 }
 
-header {
-  border: var(--border);
-}
 header .header_body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   padding: 25px 0px;
 }
+header .header_body .logo {
+  width: 131px;
+}
 header .header_body .logo img {
-  width: 130px;
   padding-top: 5px;
 }
-header .header_body .search a {
+header .header_body .right_content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+header .header_body .right_content .nav {
+  flex: 1;
+  display: grid;
+  align-items: center;
+}
+header .header_body .right_content .extra_links {
+  display: flex;
+}
+header .header_body .right_content .extra_links .search a {
   padding-top: 6px;
 }
-
-nav {
-  display: block;
+header .header_body .right_content .extra_links .nav_control {
+  display: none;
+  align-items: center;
 }
+header .header_body .right_content .extra_links .nav_control a {
+  line-height: 10px;
+}
+@media (min-width: 0px) and (max-width: 991.9px) {
+  header .header_body .right_content {
+    justify-content: flex-end;
+  }
+  header .header_body .right_content .nav {
+    order: 2;
+    flex: unset;
+  }
+  header .header_body .right_content .nav ul li.close_nav {
+    display: block;
+  }
+  header .header_body .right_content .extra_links {
+    order: 1;
+    gap: 10px;
+  }
+  header .header_body .right_content .extra_links .nav_control {
+    display: grid;
+  }
+}
+
 nav ul {
   margin-bottom: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 55px;
+  justify-content: center;
 }
 nav ul li {
   list-style-type: none;
+}
+nav ul li.close_nav {
+  display: none;
+}
+nav ul li.close_nav {
+  text-align: right;
+}
+nav ul li.close_nav a span {
+  margin-right: 20px;
+  font-size: 30px;
 }
 nav ul li a {
   color: var(--black_deep);
   text-transform: uppercase;
   font-weight: 400;
+  font-family: var(--poppin_regular);
 }
 nav ul li a.active, nav ul li a:hover {
-  font-family: var(--poppin_bold);
+  font-weight: 700;
+}
+
+@media (min-width: 0px) and (max-width: 991.9px) {
+  nav {
+    position: relative;
+  }
+  nav ul {
+    display: none;
+    height: 100vh;
+    position: fixed;
+    flex-direction: column;
+    gap: 10px;
+    width: 30vw;
+    min-width: 275px;
+    top: 0;
+    padding: 23px 0px;
+    right: 0;
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 30px;
+    background: rgba(226, 226, 226, 0.2784313725);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3215686275);
+  }
+  nav ul.active {
+    display: block;
+  }
+  nav ul li a {
+    font-size: 17px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
