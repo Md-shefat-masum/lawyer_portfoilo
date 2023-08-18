@@ -1,56 +1,41 @@
-/* 
-    Project: lawyer portfolio
-    User: MD Shefat Masum
-    Github: https://github.com/MD Shefat Masum
-    Date: 11 August 2023 
-    Time: 23:51:02 
-    Path: assets\scss\mixins\_media.scss
-    Task List: working with media query
-*/
- 
-@mixin xs(){
-    @media (min-width:0px) and (max-width: 575.9px) {
+@mixin xs() {
+    @media (min-width: 0px) and (max-width: 575.9px) {
         @content();
     }
 }
 
-@mixin sm(){
-    @media (min-width:576px) and (max-width: 767.9px) {
+@mixin sm() {
+    @media (min-width: 576px) and (max-width: 767.9px) {
         @content();
     }
 }
 
-@mixin md(){
-    @media (min-width:768px) and (max-width: 991.9px) {
+@mixin md() {
+    @media (min-width: 768px) and (max-width: 991.9px) {
         @content();
     }
 }
 
-@mixin lg(){
-    @media (min-width:992px) and (max-width: 1199.9px) {
+@mixin lg() {
+    @media (min-width: 992px) and (max-width: 1199.9px) {
         @content();
     }
 }
 
-@mixin xl(){
-    @media (min-width:1200px) and (max-width: 1399.9px) {
+@mixin xl() {
+    @media (min-width: 1200px) and (max-width: 1399.9px) {
         @content();
     }
 }
 
+@mixin xxl() {
+    @media (min-width: 1400px) {
+        @content();
+    }
+}
 
-/* 
-    Project: lawyer portfolio
-    User: MD Shefat Masum
-    Github: https://github.com/MD Shefat Masum
-    Date: 11 August 2023 
-    Time: 23:52:41 
-    Path: assets\scss\mixins\_media.scss
-    Task List: working extra large screeen
-*/
- 
-@mixin xxl(){
-    @media (min-width:1400px){
+@mixin custom_media($min, $max) {
+    @media (min-width: $min) and (max-width: $max) {
         @content();
     }
 }
