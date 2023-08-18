@@ -16,21 +16,41 @@
                 <div class="logo">
                     <img src="./assets/images/logo.png" alt="">
                 </div>
-                <nav class="nav">
-                    <ul>
-                        <li><a class="active" href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="search">
-                    <a href="#">
-                        <span class="material-symbols-outlined fill">
-                            search
-                        </span>
-                    </a>
+                <div class="right_content">
+                    <nav class="nav">
+                        <ul id="nav_list">
+                            <li class="close_nav">
+                                <a href="#" onclick="event.preventDefault(); nav_list.classList.remove('active');">
+                                    <span class="material-symbols-outlined fill">
+                                        close
+                                    </span>
+                                </a>
+                            </li>
+                            <li><a href="#" class="active">HOME</a></li>
+                            <li><a href="#" class="active">ABOUT</a></li>
+                            <li><a href="#" class="active">SEVICES</a></li>
+                            <li><a href="#" class="active">GALLARY</a></li>
+                            <li><a href="#" class="active">CONTACT</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="extra_links">
+                        <div class="search">
+                            <a href="#" onclick="event.preventDefault();">
+                                <span class="material-symbols-outlined fill">
+                                    search
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="nav_control">
+                            <a href="#" onclick="event.preventDefault(); nav_list.classList.add('active');">
+                                <span class="material-symbols-outlined fill">
+                                    format_align_right
+                                </span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
