@@ -1,24 +1,34 @@
-.container{
+.container {
     width: 1400px;
-    border: var(--border);
+    // border: var(--border);
     margin: auto;
-    
-    @include xs(){
+    padding: 15px;
+    // border: 1px solid red;
+
+    @include xs() {
         width: calc(100% - 30px);
     }
-    @include sm(){
+
+    @include sm() {
         width: calc(576px - 30px);
     }
-    @include md(){
+
+    @include md() {
         width: calc(768px - 30px);
+
     }
-    @include lg(){
+
+    @include lg() {
         width: calc(992px - 30px);
     }
-    @include xl(){
+
+    @include xl() {
         width: calc(1200px - 30px);
+
     }
-    @include xxl(){
+
+    @include xxl() {
         width: calc(1400px - 30px);
+
     }
 }
