@@ -37,6 +37,7 @@ header {
 
                     a {
                         padding-top: 6px;
+                        color: var(--black_deep);
                     }
                 }
 
@@ -47,6 +48,9 @@ header {
 
                     a {
                         line-height: 10px;
+                        span{
+                            color: var(--black_deep);
+                        }
                     }
                 }
             }
@@ -61,6 +65,7 @@ header {
                         li{
                             &.close_nav{
                                 display: block;
+                                
                             }
                         }
                     }
