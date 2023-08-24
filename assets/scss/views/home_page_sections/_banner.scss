@@ -1,0 +1,146 @@
+#banner {
+    .banner_content {
+        display: grid;
+        grid-template-columns: 755px 1fr;
+        padding: 200px 0px 70px;
+
+        @include xs() {
+            grid-template-columns: 1fr;
+            padding: 30px 0px 70px;
+        }
+
+        @include sm() {
+            grid-template-columns: 1fr;
+            padding: 30px 0px 70px;
+        }
+
+        @include md() {
+            grid-template-columns: 735px 1fr;
+            padding: 50px 0px 70px;
+        }
+
+        @include lg() {
+            padding: 50px 0px 70px;
+        }
+
+        .banner_details {
+            .top {
+                h1 {
+                    font-family: 'Playfair Display', serif;
+                    font-size: 90px;
+                    color: var(--brand_deep);
+                    line-height: 108px;
+
+                    @include xs() {
+                        font-size: 33px;
+                        line-height: 48px;
+                    }
+
+
+                    @include sm() {
+                        font-size: 60px;
+                        line-height: 75px;
+                    }
+                }
+
+                p {
+                    font-size: 24px;
+                    line-height: 38px;
+                    letter-spacing: 0.5px;
+                    max-width: 500px;
+                    margin-top: 40px;
+
+                    @include xs() {
+                        font-size: 16px;
+                        line-height: 30px;
+                    }
+                }
+
+                a {
+                    padding: 29px 36px;
+                    background-color: var(--brand_deep);
+                    border-radius: 8px;
+                    font-size: 16px;
+                    color: var(--white);
+                    text-transform: uppercase;
+                    margin-top: 50px;
+
+                    @include xs() {
+                        padding: 14px 29px;
+                    }
+                }
+            }
+
+            .bottom {
+                margin-top: 95px;
+
+                @include xs() {
+                    margin-top: 30px;
+                }
+
+                p {
+                    font-size: 22px;
+                    color: var(--gray);
+                    line-height: 30px;
+
+                    @include md() {
+                        width: 320px;
+                    }
+                }
+
+                .sponsor_list {
+                    padding-top: 30px;
+                    display: grid;
+                    grid-template-columns: 105px 105px;
+                    gap: 25px;
+
+                    a {
+                        img {
+                            width: 100%;
+                            object-fit: contain;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .banner_image {
+            position: relative;
+
+            .img {
+                width: 540px;
+                position: absolute;
+                left: -130px;
+                top: -46px;
+
+                @include xs() {
+                    width: 100%;
+                    position: unset;
+                    margin-top: 40px;
+                }
+
+                @include sm() {
+                    width: 100%;
+                    position: unset;
+                    margin-top: 40px;
+                }
+
+                @include lg() {
+                    left: -351px;
+                    top: 219px;
+                }
+
+                @include md() {
+                    width: 360px;
+                    left: -392px;
+                    top: 245px;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
