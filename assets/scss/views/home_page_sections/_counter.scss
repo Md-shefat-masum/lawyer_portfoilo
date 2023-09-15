@@ -1,0 +1,63 @@
+#counter {
+    background-image: url('../images/counter/counter_bg.png');
+
+    .counter_content {
+        padding: 55px 0px;
+
+        .conter_items {
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+
+            @include xs() {
+                display: block;
+            }
+
+            .item {
+                width: 255px;
+                gap: 30px;
+
+                @include xs(){
+                    margin: auto;
+                }
+
+                &.item2 {
+                    border-left: 1px solid var(--white);
+                    border-right: 1px solid var(--white);
+
+                    @include xs() {
+                        border-left: 0;
+                        border-right: 0;
+
+                        border-top: 1px solid var(--white);
+                        border-bottom: 1px solid var(--white);
+
+                        padding: 30px 0px;
+                        margin: 30px auto;
+                    }
+                }
+
+                h3 {
+                    font-size: 48px;
+                    line-height: 48px;
+                    margin-bottom: 30px;
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 18px;
+
+                    @include sm {
+                        line-height: 28px;
+                    }
+                }
+
+                h3,
+                p {
+                    text-align: center;
+                    color: var(--white);
+                }
+            }
+        }
+    }
+}
