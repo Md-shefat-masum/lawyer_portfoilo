@@ -1,4 +1,9 @@
 .common_heading {
+
+    &.center{
+        text-align: center;
+    }
+
     h2 {
         font-family: var(--play_fair);
         font-size: 48px;
@@ -6,7 +11,12 @@
 
         @include xs() {
             font-size: 28px;
-            list-style: 38px;
+            line-height: 38px;
+        }
+
+        @include sm() {
+            font-size: 28px;
+            line-height: 38px;
         }
     }
 
@@ -20,6 +30,17 @@
         @include xs() {
             font-size: 16px;
             line-height: 26px;
+        }
+        @include sm() {
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+
+    &.white{
+        p,
+        h2{
+            color: var(--white);
         }
     }
 }
