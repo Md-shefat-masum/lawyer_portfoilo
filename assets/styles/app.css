@@ -117,6 +117,9 @@ h3 {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 
+.common_heading.center {
+  text-align: center;
+}
 .common_heading h2 {
   font-family: var(--play_fair);
   font-size: 48px;
@@ -125,7 +128,13 @@ h3 {
 @media (min-width: 0px) and (max-width: 575.9px) {
   .common_heading h2 {
     font-size: 28px;
-    list-style: 38px;
+    line-height: 38px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.9px) {
+  .common_heading h2 {
+    font-size: 28px;
+    line-height: 38px;
   }
 }
 .common_heading p {
@@ -141,10 +150,19 @@ h3 {
     line-height: 26px;
   }
 }
+@media (min-width: 576px) and (max-width: 767.9px) {
+  .common_heading p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+.common_heading.white p,
+.common_heading.white h2 {
+  color: var(--white);
+}
 
 .container {
   width: 1400px;
-  border: var(--border);
   margin: auto;
   padding: 0px 15px;
 }
@@ -539,6 +557,65 @@ nav ul li a.active, nav ul li a:hover {
   font-size: 14px;
   line-height: 24px;
   color: var(--gray);
+}
+
+#counter {
+  background-image: url("../images/counter/counter_bg.png");
+}
+#counter .counter_content {
+  padding: 55px 0px;
+}
+#counter .counter_content .conter_items {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+@media (min-width: 0px) and (max-width: 575.9px) {
+  #counter .counter_content .conter_items {
+    display: block;
+  }
+}
+#counter .counter_content .conter_items .item {
+  width: 255px;
+  gap: 30px;
+}
+@media (min-width: 0px) and (max-width: 575.9px) {
+  #counter .counter_content .conter_items .item {
+    margin: auto;
+  }
+}
+#counter .counter_content .conter_items .item.item2 {
+  border-left: 1px solid var(--white);
+  border-right: 1px solid var(--white);
+}
+@media (min-width: 0px) and (max-width: 575.9px) {
+  #counter .counter_content .conter_items .item.item2 {
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid var(--white);
+    border-bottom: 1px solid var(--white);
+    padding: 30px 0px;
+    margin: 30px auto;
+  }
+}
+#counter .counter_content .conter_items .item h3 {
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 30px;
+}
+#counter .counter_content .conter_items .item p {
+  font-size: 18px;
+  line-height: 18px;
+}
+@media (min-width: 576px) and (max-width: 767.9px) {
+  #counter .counter_content .conter_items .item p {
+    line-height: 28px;
+  }
+}
+#counter .counter_content .conter_items .item h3,
+#counter .counter_content .conter_items .item p {
+  text-align: center;
+  color: var(--white);
 }
 
 /*# sourceMappingURL=app.css.map */
