@@ -15,7 +15,7 @@
         }
 
         @include md() {
-            grid-template-columns: 735px 1fr;
+            grid-template-columns: 1fr 0px;
             padding: 50px 0px 62px;
         }
 
@@ -133,10 +133,14 @@
                     left: -351px;
                     top: 219px;
                 }
+                
+                @include xl() {
+                    left: -143px;
+                }
 
                 @include md() {
                     width: 360px;
-                    left: -392px;
+                    left: -349px;
                     top: 245px;
                 }
 
