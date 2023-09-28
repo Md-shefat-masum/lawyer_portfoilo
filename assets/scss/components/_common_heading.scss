@@ -8,6 +8,7 @@
         font-family: var(--play_fair);
         font-size: 48px;
         line-height: 58px;
+        text-transform: capitalize;
 
         @include xs() {
             font-size: 28px;
