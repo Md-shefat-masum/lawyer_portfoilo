@@ -1,0 +1,90 @@
+#testimonial {
+    background-color: var(--testimonial_bg);
+}
+
+.testimonial_content {
+    padding: 60px 0px;
+
+    .common_heading {
+        margin-bottom: 50px;
+    }
+
+    .testimonial_items {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr 1fr;
+
+        @include md(){
+            grid-template-columns: 1fr;
+        }
+        @include sm(){
+            grid-template-columns: 1fr;
+        }
+        @include xs(){
+            grid-template-columns: 1fr;
+        }
+
+        .item {
+            // border: var(--border);
+
+            .text {
+                background-color: var(--white);
+                border-radius: 10px;
+                box-shadow: 0px 0px 20px 0px rgb(41 41 42 / 28%);
+                padding: 32px;
+                position: relative;
+
+                .arrow_part{
+                    height: 25px;
+                    width: 25px;
+                    background-color: var(--white);
+                    transform: rotate(180deg) translateX(-50%);
+                    clip-path: polygon(51% 46%, 0% 100%, 100% 100%);
+                    position: absolute;
+                    bottom: -25px;
+                    left: 45%;
+                }
+
+                .heading {
+                    font-size: 18px;
+                    text-align: center;
+                    text-transform: capitalize;
+                }
+
+                .pg {
+                    font-size: 14px;
+                    line-height: 24px;
+                    margin-top: 10px;
+                    text-align: justify;
+                }
+            }
+
+            .testimonial_giver {
+                // border: var(--border);
+                margin-top: 30px;
+                display: flex;
+                gap: 15px;
+                justify-content: center;
+                .left {
+                    .giver_image {
+                        height: 55px;
+                        width: 55px;
+                        border-radius: 50%;
+                    }
+                }
+
+                .right {
+                    .name {
+                        text-transform: capitalize;
+                        font-size: 18px;
+                    }
+
+                    .designation {
+                        font-size: 14px;
+                        list-style: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
