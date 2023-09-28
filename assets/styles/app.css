@@ -125,6 +125,7 @@ h3 {
   font-family: var(--play_fair);
   font-size: 48px;
   line-height: 58px;
+  text-transform: capitalize;
 }
 @media (min-width: 0px) and (max-width: 575.9px) {
   .common_heading h2 {
@@ -700,6 +701,95 @@ nav ul li a.active, nav ul li a:hover {
 .testimonial_content .testimonial_items .item .testimonial_giver .right .designation {
   font-size: 14px;
   list-style: 24px;
+}
+
+/* 
+    Project: lawyer portfolio
+    User: MD Shefat Masum
+    Github: https://github.com/Md-shefat-masum
+    Date: 28 September 2023 
+    Time: 22:17:05 
+    Path: assets\scss\views\home_page_sections\_complex_question.scss
+    Task List: complex question
+*/
+@media (min-width: 0px) and (max-width: 991.9px) {
+  #complex_question {
+    padding-bottom: 45px;
+  }
+}
+#complex_question .complex_question_content {
+  display: grid;
+  grid-template-columns: 1fr 395px;
+  gap: 30px;
+}
+@media (min-width: 768px) and (max-width: 991.9px) {
+  #complex_question .complex_question_content {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.9px) {
+  #complex_question .complex_question_content {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 0px) and (max-width: 575.9px) {
+  #complex_question .complex_question_content {
+    grid-template-columns: 1fr;
+  }
+}
+#complex_question .complex_question_content .left {
+  border: 1px solid var(--border);
+  padding: 45px 0px;
+}
+#complex_question .complex_question_content .left .action_btns .action_btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--brand_light);
+  border-radius: 8px;
+  padding: 14px 18px;
+  color: var(--white);
+}
+#complex_question .complex_question_content .left .action_btns .action_btn .icon {
+  position: relative;
+  top: 2px;
+}
+#complex_question .complex_question_content .left .action_btns .action_btn .text {
+  font-size: 22px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+#complex_question .complex_question_content .right {
+  border: 1px solid var(--border);
+}
+#complex_question .complex_question_content .right .img {
+  height: 100%;
+  overflow-x: hidden;
+}
+#complex_question .complex_question_content .right .img img {
+  border-bottom-left-radius: 40px;
+  height: 401px;
+  margin-top: -8px;
+  position: relative;
+  top: 8px;
+}
+@media (min-width: 768px) and (max-width: 991.9px) {
+  #complex_question .complex_question_content .right .img img {
+    max-width: 100%;
+    height: unset;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.9px) {
+  #complex_question .complex_question_content .right .img img {
+    max-width: 100%;
+    height: unset;
+  }
+}
+@media (min-width: 0px) and (max-width: 575.9px) {
+  #complex_question .complex_question_content .right .img img {
+    max-width: 100%;
+    height: unset;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

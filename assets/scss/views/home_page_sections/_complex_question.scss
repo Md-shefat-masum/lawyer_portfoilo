@@ -1,0 +1,100 @@
+/* 
+    Project: lawyer portfolio
+    User: MD Shefat Masum
+    Github: https://github.com/Md-shefat-masum
+    Date: 28 September 2023 
+    Time: 22:17:05 
+    Path: assets\scss\views\home_page_sections\_complex_question.scss
+    Task List: complex question
+*/
+
+
+
+#complex_question {
+
+    @include custom_media(0px, 991.9px) {
+        padding-bottom: 45px;
+    }
+
+    .complex_question_content {
+        display: grid;
+        grid-template-columns: 1fr 395px;
+        gap: 30px;
+
+        @include md() {
+            grid-template-columns: 1fr;
+        }
+
+        @include sm() {
+            grid-template-columns: 1fr;
+        }
+
+        @include xs() {
+            grid-template-columns: 1fr;
+        }
+
+        .left {
+            border: 1px solid var(--border);
+            padding: 45px 0px;
+
+            .common_heading {}
+
+            .action_btns {
+                .action_btn {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 10px;
+                    background-color: var(--brand_light);
+                    border-radius: 8px;
+                    padding: 14px 18px;
+                    color: var(--white);
+
+                    .icon {
+                        position: relative;
+                        top: 2px;
+
+                        span {}
+                    }
+
+                    .text {
+                        font-size: 22px;
+                        font-weight: 600;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+
+        .right {
+            border: 1px solid var(--border);
+
+            .img {
+                height: 100%;
+                overflow-x: hidden;
+
+                img {
+                    border-bottom-left-radius: 40px;
+                    height: 401px;
+                    margin-top: -8px;
+                    position: relative;
+                    top: 8px;
+
+                    @include md() {
+                        max-width: 100%;
+                        height: unset;
+                    }
+
+                    @include sm() {
+                        max-width: 100%;
+                        height: unset;
+                    }
+
+                    @include xs() {
+                        max-width: 100%;
+                        height: unset;
+                    }
+                }
+            }
+        }
+    }
+}
