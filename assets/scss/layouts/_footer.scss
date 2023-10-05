@@ -1,0 +1,93 @@
+#top_footer {
+    background-color: var(--brand_light);
+
+    .top_footer_content {
+        padding: 85px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        .logo {
+            width: 300px;
+
+            .img {
+
+                img {}
+            }
+        }
+
+        .footer_links {
+            width: 200px;
+            // border: 1px solid var(--border);
+
+            .footer_link_heading {
+                color: var(--white);
+                font-size: 20px;
+                margin-bottom: 30px;
+                font-weight: 500;
+                text-transform: capitalize;
+                font-family: var(--play_fair);
+            }
+
+            .link_list {
+                li {
+                    a {
+                        color: var(--white);
+                        font-size: 16px;
+                        text-transform: capitalize;
+                        display: block;
+                        padding: 6px;
+
+                        &:hover {
+                            background-color: var(--brand_deep);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+#bottom_footer {
+    background-color: var(--brand_deep);
+    padding: 22px 0px;
+
+    .bottom_footer_content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-between;
+
+        .left {
+            p{
+                color: var(--white);
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+        .right {
+            .social_links {
+                display: flex;
+                gap: 5px;
+
+                li {
+                    a {
+                        i {
+                            display: inline-block;
+                            height: 25px;
+                            width: 25px;
+                            border-radius: 50%;
+                            line-height: 25px;
+                            text-align: center;
+                            background-color: var(--brand_light);
+                            color: var(--white);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
