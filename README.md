@@ -1,6 +1,6 @@
 <h3>WELCOME TO LAWER PORTFOLIO PROJECT</h3>
 
-<img src="https://md-shefat-masum.github.io/lawyer_portfoilomockup/1.jpg" style="max-width: 450px; width: 100%;">
+<img src="https://md-shefat-masum.github.io/lawyer_portfoilo/mockup/1.jpg" style="max-width: 450px; width: 100%;">
 
 <h5>Technologies</h5>
 <ol>
