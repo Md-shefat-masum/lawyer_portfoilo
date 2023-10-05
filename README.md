@@ -74,5 +74,8 @@ A lawyer portfolio website is a digital platform designed to showcase the profes
     <li>Real data</li>
     <li>Heading css with class name</li>
     <li>Image alter name</li>
-    <li>SEO </li>
+    <li>SEO tag placing</li>
+    <li>Mockup</li>
+    <li>Thumb image</li>
+    <li>Wel descriptive README.md file cretion</li>
 </ol>
