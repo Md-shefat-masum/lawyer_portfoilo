@@ -1,7 +1,6 @@
 <h3>WELCOME TO LAWER PORTFOLIO PROJECT</h3>
-<p>
 
-</p>
+<img src="./mockup/1.jpg" style="max-width: 450px; width: 100%;">
 
 <h5>Technologies</h5>
 <ol>
@@ -21,9 +20,13 @@
 
 <h5>Specialities</h5>
 <ol>
+    <li>SEO Frienly</li>
     <li>All device friendly design</li>
+    <li>Fast Loading</li>
+    <li>Fully optimized</li>
 </ol>
 
+<h5>Features</h5>
 <ol>
     <li>Elegant and Clean Design</li>
     <li>100% Responsive</li>
