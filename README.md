@@ -68,3 +68,11 @@ A lawyer portfolio website is a digital platform designed to showcase the profes
 <p>
 <b>Areas of Practice:</b> This section outlines the different legal areas the lawyer specializes in, such as family law, criminal defense, personal injury, or corporate law. Each practice area is described briefly, giving visitors an understanding of the lawyer's expertise.
 </p>
+
+<h6> what to do next</h6>
+<ol>
+    <li>Real data</li>
+    <li>Heading css with class name</li>
+    <li>Image alter name</li>
+    <li>SEO </li>
+</ol>
