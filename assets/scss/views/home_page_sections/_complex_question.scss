@@ -34,7 +34,7 @@
         }
 
         .left {
-            border: 1px solid var(--border);
+            // border: 1px solid var(--border);
             padding: 45px 0px;
 
             .common_heading {}
@@ -66,11 +66,11 @@
         }
 
         .right {
-            border: 1px solid var(--border);
+            // border: 1px solid var(--border);
 
             .img {
                 height: 100%;
-                overflow-x: hidden;
+                overflow: hidden;
 
                 img {
                     border-bottom-left-radius: 40px;
